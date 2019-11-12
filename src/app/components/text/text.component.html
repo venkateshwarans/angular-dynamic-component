@@ -1,0 +1,15 @@
+
+
+
+<h2 style="color: rgba(156, 156, 156, 0.719)">/**Text compontent starts</h2>
+
+<h2>Program 1 Component</h2>
+<input [(ngModel)]="initialInput" (keyup)="textInputHandler($event)" type="text">
+
+<ndc-dynamic [ndcDynamicComponent]="loadComponent" [ndcDynamicInputs]="inputs"
+  ></ndc-dynamic>
+
+<button (click)="handleButtonClick('hello')">Add new component</button>
+
+<h2 style="color: rgba(156, 156, 156, 0.719)">Text compontent ends **/</h2>
+

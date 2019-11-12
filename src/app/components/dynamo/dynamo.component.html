@@ -1,0 +1,16 @@
+<nav>
+    <a routerLink="/p2" routerLinkActive="active">Video Creator</a>
+</nav>
+
+<br>
+<h1 style="color: rgba(201, 190, 190, 0.719)">/**Dynamic Component Wrapper starts</h1>
+<ng-container *ngFor="let component of components">
+  <ndc-dynamic [ndcDynamicComponent]="component.component" [ndcDynamicInputs]="inputs"
+  [ndcDynamicOutputs]="outputs"
+  ></ndc-dynamic>
+</ng-container>
+<br>
+<h1 style="color: rgba(201, 190, 190, 0.719)">Dynamic Component Wrapper ends **/</h1>
+
+
+
